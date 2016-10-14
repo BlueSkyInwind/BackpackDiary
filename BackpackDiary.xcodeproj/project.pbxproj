@@ -29,6 +29,8 @@
 		22820B681DB0D22900BC4307 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22820B671DB0D22900BC4307 /* SystemConfiguration.framework */; };
 		22820B6A1DB0D23300BC4307 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22820B691DB0D23300BC4307 /* libz.tbd */; };
 		22820B6C1DB0D25A00BC4307 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22820B6B1DB0D25A00BC4307 /* libsqlite3.tbd */; };
+		22820B6F1DB0E18500BC4307 /* DB_Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22820B6E1DB0E18500BC4307 /* DB_Tools.swift */; };
+		22820B711DB0E4E000BC4307 /* DB_PraseTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22820B701DB0E4E000BC4307 /* DB_PraseTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		22820B671DB0D22900BC4307 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		22820B691DB0D23300BC4307 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		22820B6B1DB0D25A00BC4307 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		22820B6E1DB0E18500BC4307 /* DB_Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB_Tools.swift; sourceTree = "<group>"; };
+		22820B701DB0E4E000BC4307 /* DB_PraseTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB_PraseTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,7 @@
 		22820B481DB0C93300BC4307 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				22820B6D1DB0E14500BC4307 /* Tools */,
 				22820B4F1DB0CCE200BC4307 /* Base */,
 				22820B4E1DB0CCA000BC4307 /* commonuserful */,
 			);
@@ -261,6 +266,15 @@
 				22820B591DB0D1EC00BC4307 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22820B6D1DB0E14500BC4307 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				22820B6E1DB0E18500BC4307 /* DB_Tools.swift */,
+				22820B701DB0E4E000BC4307 /* DB_PraseTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +414,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22820B1A1DB0C7C300BC4307 /* ViewController.swift in Sources */,
+				22820B711DB0E4E000BC4307 /* DB_PraseTool.swift in Sources */,
+				22820B6F1DB0E18500BC4307 /* DB_Tools.swift in Sources */,
 				22820B511DB0CD0B00BC4307 /* DB_BaseViewController.swift in Sources */,
 				22820B4D1DB0CAFE00BC4307 /* DB_LoginAndRegisterViewController.swift in Sources */,
 				22820B531DB0CE2B00BC4307 /* commonuserful.swift in Sources */,
